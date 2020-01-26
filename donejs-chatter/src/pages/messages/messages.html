@@ -1,0 +1,10 @@
+<script src="../../../node_modules/steal/steal.js"></script>
+<script type="steal-module">
+  import ChatMessage from "~/pages/messages/";
+
+  let chatMessage = new ChatMessage({
+    viewModel: {}
+  });
+
+  document.body.appendChild(chatMessage.element);
+</script>
