@@ -3,6 +3,8 @@ import QUnit from 'steal-qunit';
 
 import 'donejs-chatter/models/test';
 
+import '~/pages/messages/messages-test';
+
 F.attach(QUnit);
 
 QUnit.module('donejs-chatter functional smoke test', {

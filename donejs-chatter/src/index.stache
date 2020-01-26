@@ -3,10 +3,21 @@
     <title>{{this.title}}</title>
   </head>
   <body>
+    <can-import from="bootstrap/less/bootstrap.less" />
     <can-import from="~/styles.less" />
     <can-import from="~/app" export-as="viewModel" route-data="routeData" />
 
-    <h1>The <strong>{{this.routeData.page}}</strong> page</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h1 class="page-header text-center">
+            <img src="https://donejs.com/static/img/donejs-logo-white.svg"
+                alt="DoneJS logo" style="width: 100%;" />
+            <br>Chat
+          </h1>
+        </div>
+      </div>
+    </div>
 
     {{#eq(this.env.NODE_ENV, "production")}}
       <script src="{{joinBase('steal.production.js')}}"></script>
