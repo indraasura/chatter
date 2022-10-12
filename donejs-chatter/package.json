@@ -76,7 +76,7 @@
     "steal-conditional": "^1.0.0",
     "steal-qunit": "^1.0.1",
     "steal-tools": "^2.0.9",
-    "testee": "^0.8.1"
+    "testee": "^0.10.2"
   },
   "license": "ISC"
 }
